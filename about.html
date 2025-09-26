@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | DEVINE DINE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
-        <div>
-            <a href="index.html">DEVINE <span>DINE</span></a>
-            <button>
+        <div class="container header-container">
+            <a href="index.html" class="logo">DEVINE <span>DINE</span></a>
+            <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
             <nav>
@@ -24,60 +25,60 @@
         </div>
     </header>
     
-    <section>
-        <div>
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container hero-content">
             <h1>About DEVINE DINE</h1>
             <p>Discover our story and passion for South African cuisine</p>
         </div>
     </section>
 
-    <section>
-        <div>
-            <div>
-                <div>
+    <section id="about-detail">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
                     <h2>Our Journey</h2>
                     <p>DEVINE DINE was established in 2010 by renowned South African chef Vhuhwavho Rasila. With over 20 years of international experience, Chef Vhuhwavho Rasila returned to her roots with a vision to create a dining experience that celebrates South Africa's diverse culinary heritage while incorporating modern techniques and global influences.</p>
                     <p>Our name, DEVINE DINE, represents our commitment to divine flavors and divine experiences. We believe that dining should engage all the senses and create lasting memories.</p>
                 </div>
-                <div>
+                <div class="about-image">
                     <img src="imagess/WhatsApp Image 2025-08-27 at 15.03.57.jpeg" alt="Chef Vhuhwavho Rasila">
                 </div>
             </div>
             
-            <div>
-                <div>
+            <div class="about-content" style="margin-top: 60px; flex-direction: row-reverse;">
+                <div class="about-text">
                     <h2>Our Philosophy</h2>
                     <p>At DEVINE DINE, we are committed to sustainability and supporting local communities. We source over 90% of our ingredients from local farmers, fishermen, and producers within South Africa.</p>
                     <p>Our menu changes seasonally to reflect the best produce available, and we work closely with our suppliers to ensure the highest quality ingredients while maintaining ethical and environmentally responsible practices.</p>
                     <p>We believe that exceptional food is just one part of the dining experience. Our attentive service, elegant ambiance, and carefully curated wine list complete what we hope will be an unforgettable experience for our guests.</p>
                 </div>
-                <div>
+                <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b3029?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1015&q=80" alt="Local Ingredients">
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Meet Our Team</h2>
-            <div>
-                <div>
-                    <img src="imagess/WhatsApp Image 2025-08-27 at 15.03.57.jpeg" alt="Chef Vhuhwavho Rasila">
+    <section id="team" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="text-center">Meet Our Team</h2>
+            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px;">
+                <div class="team-member" style="text-align: center;">
+                    <img src="imagess/WhatsApp Image 2025-08-27 at 15.03.57.jpeg" alt="Chef Vhuhwavho Rasila" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                     <h3>Vhuhwavho Rasila</h3>
-                    <p>Executive Chef & Owner</p>
+                    <p style="color: var(--accent-color); font-weight: 600;">Executive Chef & Owner</p>
                     <p>With experience in Michelin-starred restaurants across Europe, Chef Vhuhwavho Rasila brings innovation and expertise to every dish.</p>
                 </div>
-                <div>
-                    <img src="imagess/medium-shot-professional-chef-posing.jpg" alt="Sommelier">
+                <div class="team-member" style="text-align: center;">
+                    <img src="imagess/medium-shot-professional-chef-posing.jpg" alt="Sommelier" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                     <h3>Nomsa Dlamini</h3>
-                    <p>Head Sommelier</p>
+                    <p style="color: var(--accent-color); font-weight: 600;">Head Sommelier</p>
                     <p>Nomsa curates our extensive wine list, featuring the finest South African wines alongside international selections.</p>
                 </div>
-                <div>
-                    <img src="imagess/medium-shot-forest-warden-wearing-hat.jpg" alt="Manager">
+                <div class="team-member" style="text-align: center;">
+                    <img src="imagess/medium-shot-forest-warden-wearing-hat.jpg" alt="Manager" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                     <h3>Takudzwa Mnudenda</h3>
-                    <p>Restaurant Manager</p>
+                    <p style="color: var(--accent-color); font-weight: 600;">Restaurant Manager</p>
                     <p>Takudzwa ensures that every guest receives impeccable service and has an unforgettable dining experience.</p>
                 </div>
             </div>
@@ -85,19 +86,19 @@
     </section>
 
    <footer>
-        <div>
-            <div>
-                <div>
-                    <div>DEVINE <span>DINE</span></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">DEVINE <span>DINE</span></div>
                     <p>Experience the finest South African cuisine in an elegant setting at DEVINE DINE. Where taste meets elegance.</p>
-                    <div>
+                    <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
-                <div>
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -107,13 +108,13 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-hours">
                     <h3>Opening Hours</h3>
                     <p><span>Monday - Saturday:</span> <span>5:00 PM - 10:00 PM</span></p>
                     <p><span>Sunday:</span> <span>11:00 AM - 3:00 PM</span></p>
                 </div>
             </div>
-            <div>
+            <div class="copyright">
                 <p>&copy; 2023 DEVINE DINE. All Rights Reserved.</p>
             </div>
         </div>

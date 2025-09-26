@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | DEVINE DINE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html">DEVINE <span>DINE</span></a>
-            <button>
+        <div class="container header-container">
+            <a href="index.html" class="logo">DEVINE <span>DINE</span></a>
+            <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
             <nav>
@@ -24,74 +25,75 @@
         </div>
     </header>
 
-    <section>
-        <div>
+    
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container hero-content">
             <h1>Our Menu</h1>
             <p>Experience the taste of South Africa with our seasonal offerings</p>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Our Culinary Offerings</h2>
-            <div>
-                <button>Starters</button>
-                <button>Mains</button>
-                <button>Desserts</button>
-                <button>Drinks</button>
-                <button>Wine List</button>
+    <section class="menu">
+        <div class="container">
+            <h2 class="text-center">Our Culinary Offerings</h2>
+            <div class="menu-categories">
+                <button class="menu-category-btn active">Starters</button>
+                <button class="menu-category-btn">Mains</button>
+                <button class="menu-category-btn">Desserts</button>
+                <button class="menu-category-btn">Drinks</button>
+                <button class="menu-category-btn">Wine List</button>
             </div>
             
-            <div>
-                <div>
+            <div class="menu-items">
+                <div class="menu-item">
                     <h3>Bobotie Spring Rolls</h3>
                     <p>Crispy pastry filled with spiced minced meat, served with apricot chutney</p>
-                    <div>R95</div>
+                    <div class="menu-item-price">R95</div>
                 </div>
-                <div>
+                <div class="menu-item">
                     <h3>Cape Malay Seafood Curry</h3>
                     <p>Line fish, prawns and calamari in a fragrant coconut curry sauce</p>
-                    <div>R165</div>
+                    <div class="menu-item-price">R165</div>
                 </div>
-                <div>
+                <div class="menu-item">
                     <h3>Braised Karoo Lamb</h3>
                     <p>Slow-cooked lamb shank with root vegetables and red wine jus</p>
-                    <div>R245</div>
+                    <div class="menu-item-price">R245</div>
                 </div>
-                <div>
+                <div class="menu-item">
                     <h3>Springbok Carpaccio</h3>
                     <p>Thinly sliced springbok with truffle oil, wild rocket and parmesan</p>
-                    <div>R120</div>
+                    <div class="menu-item-price">R120</div>
                 </div>
-                <div>
+                <div class="menu-item">
                     <h3>West Coast Mussels</h3>
                     <p>Fresh mussels in a white wine, garlic and cream sauce</p>
-                    <div>R135</div>
+                    <div class="menu-item-price">R135</div>
                 </div>
-                <div>
+                <div class="menu-item">
                     <h3>Vegetable Samosas</h3>
                     <p>Spiced vegetable filled pastries with mango atchar</p>
-                    <div>R85</div>
+                    <div class="menu-item-price">R85</div>
                 </div>
             </div>
             
-            <div>
+            <div class="text-center" style="margin-top: 40px;">
                 <p>Our menu changes seasonally to feature the freshest local ingredients</p>
                 <p>Please inform us of any dietary restrictions or allergies</p>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Wine Pairing Experience</h2>
-            <div>
-                <div>
+    <section id="wine-pairing" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="text-center">Wine Pairing Experience</h2>
+            <div class="about-content">
+                <div class="about-text">
                     <p>At DEVINE DINE, we take pride in our extensive selection of South African wines, carefully curated by our head sommelier. South Africa's diverse wine regions produce world-class varieties that perfectly complement our cuisine.</p>
                     <p>We offer wine pairing options with our tasting menu, or our sommelier can recommend the perfect bottle to enhance your meal.</p>
-                    <a href="contact.html">Ask Our Sommelier</a>
+                    <a href="contact.html" class="btn">Ask Our Sommelier</a>
                 </div>
-                <div>
+                <div class="about-image">
                     <img src="imagess/side-view-woman-hand-pouring-red-wine-into-glass-different-kinds-cheese-olive-walnut-grape-white-surface-black-background.jpg" alt="Wine Selection">
                 </div>
             </div>
@@ -99,19 +101,19 @@
     </section>
 
     <footer>
-        <div>
-            <div>
-                <div>
-                    <div>DEVINE <span>DINE</span></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">DEVINE <span>DINE</span></div>
                     <p>Experience the finest South African cuisine in an elegant setting at DEVINE DINE. Where taste meets elegance.</p>
-                    <div>
+                    <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
-                <div>
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -121,13 +123,13 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-hours">
                     <h3>Opening Hours</h3>
                     <p><span>Monday - Saturday:</span> <span>5:00 PM - 10:00 PM</span></p>
                     <p><span>Sunday:</span> <span>11:00 AM - 3:00 PM</span></p>
                 </div>
             </div>
-            <div>
+            <div class="copyright">
                 <p>&copy; 2023 DEVINE DINE. All Rights Reserved.</p>
             </div>
         </div>

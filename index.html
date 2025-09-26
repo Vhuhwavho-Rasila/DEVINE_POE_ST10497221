@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVINE DINE | Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -79,7 +81,7 @@
                     <div class="menu-item-price">R245</div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="text-center" style="margin-top: 40px;">
                 <a href="menu.html" class="btn">View Full Menu</a>
             </div>
         </div>
@@ -225,6 +227,31 @@
         </div>
     </footer>
 
-   
+    <script>
+        
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = nav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        
+        const categoryBtns = document.querySelectorAll('.menu-category-btn');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+            });
+        });
+        
+       
+        const dateInput = document.getElementById('date');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+    </script>
 </body>
-</html>
